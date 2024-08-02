@@ -35,6 +35,8 @@ Don't use a too recent Python (e.g. 3.12) because I think PyTorch support is sti
 
 ```bash
 cd ../../
+echo "fire" >> requirements.txt
+echo "--extra-index-url https://download.pytorch.org/whl/rocm6.1" >> requirements.txt
 pip install -r requirements.txt
 pip install -e .
 ```
